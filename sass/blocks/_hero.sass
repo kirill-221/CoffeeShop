@@ -1,0 +1,87 @@
+.hero
+    background: url('../img/hero_background.jpg') center no-repeat
+    background-size: 100% 100%
+    &-wrapper   
+        display: flex
+        padding-top: 147px
+        padding-bottom: 170px
+        position: relative
+    &__about
+        display: flex
+        flex-direction: column
+        max-width: 529px
+    &__title
+        margin: 0
+        font: 72px/130% 'Righteous', sans-serif
+        color: $light
+    &__description
+        font: 500 20px/180% 'Urbanist', sans-serif
+        text-transform: capitalize
+        margin-top: 32px
+        margin-bottom: 64px
+        color: $text
+    &__button
+        padding: 24px
+        max-width: 202px   
+    &__play
+        position: absolute
+        cursor: pointer
+        right: 10%
+        bottom: 25%
+.header
+    background: #272523
+    &-wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+        max-width: 1320px
+        width: 93%
+        margin: auto
+        padding-top: 33px
+        padding-bottom: 32px
+.navbar
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__left
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 397px
+    &__right
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 417px
+    &__link
+        font: 18px/22px 'Inter', sans-serif
+        text-decoration: none
+        cursor: pointer
+        color: #FFFFFF
+        &--active
+            color: #C99E71  
+        &:hover
+            color: $primary 
+    &__icon
+        &:hover
+            color: $primary
+    &-mobile
+        display: none
+        position: fixed
+        left: 0
+        right: 0
+        bottom: 0
+        top: 80px
+        background: #ffdead
+        width: 100%
+        overflow: scroll
+        transition: 300ms linear
+    &-menu
+        display: none
+        &__line
+            width: 16px
+            height: 1px
+            background-color: black
+.menu
+    display: flex
+    justify-content: space-between

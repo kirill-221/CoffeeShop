@@ -1,0 +1,44 @@
+.footer
+    display: flex
+    justify-content: space-between
+    padding-bottom: 72px
+    align-items: center
+    &__nav
+        display: flex
+        width: 650px
+        justify-content: space-between
+    &__link
+        font: 500 20px/100% 'Urbanist', san-serif
+        text-decoration: none
+        color: $light
+        &--active
+            color: $primary
+        &:hover
+            color: $primary
+    &__enter
+        position: relative
+        display: flex
+        align-items: center
+    &__input
+        height: 72px
+        padding-left: 22px
+        padding-right: 85px
+        border: none
+        width: 328px
+        background: #1C1814
+        border-radius: 36px
+        color: $light
+        &:placeholder
+            font: 500 16px/180% 'Urbanist', san-serif
+            text-transform: capitalize
+            color: $text
+            opacity: 0.8
+        &-button
+            
+            position: absolute
+            height: 48px
+            width: 48px
+            border: none
+            background: #C99E71
+            right: 15px  
+            border-radius: 50%

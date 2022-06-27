@@ -1,0 +1,59 @@
+.testimonial
+    display: flex
+    padding-bottom: 140px
+    flex-direction: column
+    &-titles
+        display: flex
+        align-items: center
+        flex-direction: column
+        margin-bottom: 56px
+    &__about
+        display: flex
+        flex-wrap: wrap
+    &-item
+        display: flex
+        flex-direction: column
+        max-width: 366px  
+        margin-right: 36px
+        &:hover
+            transform: scale(1.1)
+            transition: 0.4s ease-in-out
+        &:last-child
+            margin-right: 0
+        &__image
+            max-width: 366px
+            max-height: 360px
+        &__info
+            display: flex
+            flex-direction: column
+            background: #1C1814
+            padding: 20px
+        &__text
+            display: flex
+            width: 100%
+            justify-content: space-between
+            flex-wrap: wrap
+        &__author
+            font: 500 18px/22px 'Urbanist', san-serif 
+            color: $light
+            &--color
+                color: $primary
+        &__date
+            font: 500 18px/22px 'Urbanist', san-serif 
+            color: $light
+        &__description
+            font: 20px/150% 'Righteous', san-serif
+            text-transform: capitalize
+            color: $light
+            margin-top: 16px
+        &__link
+            font: 500 16px/19px 'Urbanist', san-serif
+            margin-top: 32px
+            color: $primary
+            text-decoration: none
+            display: flex
+            align-items: center
+            &:hover
+                color: $light
+        &__icon
+            margin-left: 8px

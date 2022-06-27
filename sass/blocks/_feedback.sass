@@ -1,0 +1,96 @@
+.feedback
+    display: flex
+    flex-direction: column
+    padding-bottom: 140px
+    &-titles
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-bottom: 56px
+.slider
+    overflow: hidden
+    &__slides
+        display: flex
+        transition: .9s
+    &__slide
+        display: flex
+        flex-direction: column
+        background: #1C1814
+        padding: 40px
+        flex-shrink: 0   
+        max-width: 565px
+    &__image
+        width: 129px
+        height: 149px
+        margin-right: 24px
+    &__text
+        font: 500 16px/180% 'Urbanist', san-serif
+        text-transform: capitalize
+        color: $text
+        opacity: 0.8
+    &__author
+        align-self: self-start
+        font: 500 18px/120% 'Urbanist', san-serif
+        text-align: center
+        color: $light
+    &__post
+        font: 500px 14px/180% 'Urbanist', san-serif
+        text-transform: capitalize
+        color: $text
+        opacity: 0.8
+    &__star
+        width: 20px
+        height: 20px
+    &__user
+        display: flex
+        align-items: center
+    &__rating
+        display: flex
+        justify-content: space-between
+        width: 100%
+    &__count
+        font: 600 20px/135% 'Urbanist', san-serif
+        color: $primary
+    &__bottom
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-top: 36px
+    &__block
+        display: flex
+        flex-direction: column
+    &__line 
+        display: none
+        position: relative
+        width: 120px
+        height: 4px
+        margin-top: 20px
+        background: #FFFFFF
+        opacity: 0.6
+        border-radius: 3px
+    &__active
+        position: absolute
+        background: $primary
+        border-radius: 3px
+        min-width: 20px
+        height: 4px    
+            
+            
+.buttons
+    display: flex
+    justify-content: end
+.button
+    &__type
+        &--prev
+            width: 56px
+            height: 56px
+            border-radius: 50%
+            border: none
+            background: #121315
+            margin-right: 16px
+        &--next
+            width: 56px
+            height: 56px
+            border-radius: 50%
+            border: none
+            background: $primary

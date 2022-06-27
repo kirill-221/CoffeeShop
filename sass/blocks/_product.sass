@@ -1,0 +1,65 @@
+.product
+    display: flex
+    flex-direction: column
+    padding-bottom: 140px
+    &__button
+        align-self: center
+        padding: 20px 36px 20px 36px
+        font: 700 18px/22px 'Inter', san-serif
+        color: $light
+    &-titles
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-bottom: 56px
+    &__block
+        display: flex
+        justify-content: space-between
+        margin-bottom: 56px
+    &-item
+        display: flex
+        flex-direction: column
+        align-items: center
+        background: #121315
+        padding: 48px
+        &:hover
+            transform: scale(1.1)
+            transition: 0.4s ease-in-out
+        &__title
+            font: 24px/30px 'Righteous', san-serif
+            text-transform: uppercase
+            margin-top: 20px
+            margin-bottom: 20px
+            color: $light
+        &__button
+            display: flex
+            align-items: center
+            flex-direction: row-reverse
+            padding: 12px 21px 12px 21px 
+            font: 600 18px/22px 'Inter', san-serif
+            color: $light
+            text-transform: unset
+        &__icon
+            width: 21px
+            height: 21px
+            margin-right: 12px
+        &__rating
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            margin-top: 36px
+        &__name
+            font: 500 16px/18px 'Urbanist', san-serif
+            text-transform: uppercase
+            margin-right: 13px
+            color: $primary
+        &__star
+            margin-right: 4px
+            &:last-child
+                margin-right: 0
+        &__price
+            font: 600 18px/22px 'Urbanist', san-serif
+            text-transform: uppercase
+            color: $light
+            &--background
+                color: $primary

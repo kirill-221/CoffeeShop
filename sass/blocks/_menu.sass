@@ -1,0 +1,40 @@
+.menu
+    display: flex
+    flex-direction: column
+    padding-top: 50px
+    padding-bottom: 140px
+    &-titles
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-bottom: 56px
+    &-offer
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        &__title
+            font: 24px/30px 'Righteous', san-serif 
+            color: $light
+        &__price
+            font: 600 18px/22px 'Urbanist', san-serif
+            color: $primary
+        &__image
+            margin-right: 20px
+        &__item
+            display: flex
+            width: 100%
+            max-width: 565px
+            margin-bottom: 36px
+            align-items: center
+            padding: 24px
+            border: 1px solid #32323D
+            &:hover
+                background: #1C1814
+                transform: scale(1.1)
+                transition: 0.4s ease-in-out
+        &__text
+            display: flex
+            align-items: center
+            max-width: 425px
+            width: 100%
+            justify-content: space-between
